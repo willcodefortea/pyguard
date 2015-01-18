@@ -1,3 +1,9 @@
+.. image:: https://travis-ci.org/benemery/pyguard.svg?branch=master
+    :target: https://travis-ci.org/benemery/pyguard
+
+.. image:: https://coveralls.io/repos/benemery/pyguard/badge.svg?branch=master
+  :target: https://coveralls.io/r/benemery/pyguard?branch=master
+
 PyGuard
 =======
 
