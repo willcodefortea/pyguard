@@ -42,7 +42,8 @@ setup(name=PACKAGE_NAME,
       url='https://github.com/benemery/%s' % PACKAGE_NAME,
       download_url='https://github.com/benemery/%s/tarball/%s' % (VERSION, PACKAGE_NAME),
       packages=[PACKAGE_NAME, ],
+      install_requires=requires,
       extras_require={
         'tests': tests_require,
     },
-     )
+)
