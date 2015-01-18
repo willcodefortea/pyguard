@@ -25,7 +25,7 @@ with open('README.rst', 'rb') as fin:
 PACKAGE_NAME = 'pyguard'
 
 requires = [
-    'filewatch==0.1.0',
+    'filewatch==0.1.5',
 ]
 
 tests_require = [
