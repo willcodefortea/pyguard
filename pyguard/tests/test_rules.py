@@ -16,6 +16,11 @@ class TestRegexRule(object):
         assert rule.match('bar.txt')[0]
         assert not rule.match('foobar.txt')[0]
 
+    def test_compiled_file(self):
+        """Do we correctly ignore compiled python files?"""
+        rule = RegexRule('foo.pyc')
+        assert not rule.match('foo.pyc')[0]
+
 class TestRuleManager(object):
     def test_rule_registration(self):
         """Can we register rules correctly?"""
