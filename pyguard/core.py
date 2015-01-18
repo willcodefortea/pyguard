@@ -1,3 +1,5 @@
+from pyguard import logger
+
 class PyGuard(object):
     def __init__(self):
         self.managers = []
@@ -14,7 +16,7 @@ class PyGuard(object):
             if result:
                 # If we have a result, then simply print to console.
                 # TODO: logging!
-                print result
+                logger.info(result)
 
 # Primary hook for the rest of the app
 guardian = PyGuard()
