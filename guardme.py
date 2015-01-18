@@ -1,6 +1,8 @@
 from filewatch import file_updated_subject, Watcher
 
-from pyguard import guardian, GuardianObserver, RegexRule, RuleManager
+from pyguard.core import guardian
+from pyguard.observer import GuardianObserver
+from pyguard.rules import RuleManager, RegexRule
 
 manager = RuleManager(cmd='py.test pyguard -s')
 manager.register_rules(
