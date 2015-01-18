@@ -1,0 +1,8 @@
+language: python
+install:
+  - pip install .
+  - pip install coveralls
+script:
+  coverage run --source=pyguard -m py.test pyguard
+after_success:
+  coveralls
